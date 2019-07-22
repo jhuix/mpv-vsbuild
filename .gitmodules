@@ -1,0 +1,12 @@
+[submodule "mpv"]
+	path = mpv
+	url = https://github.com/jhuix/mpv.git
+[submodule "third/SPIRV-Cross"]
+	path = third/SPIRV-Cross
+	url = https://github.com/KhronosGroup/SPIRV-Cross.git
+[submodule "third/nv-codec-headers"]
+	path = third/nv-codec-headers
+	url = https://github.com/jhuix/nv-codec-headers.git
+[submodule "third/FFmpeg"]
+	path = third/FFmpeg
+	url = https://github.com/FFmpeg/FFmpeg.git
