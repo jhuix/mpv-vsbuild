@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9875DEF5-18BC-4B5B-90A2-5B299149AD59}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mpv</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>libmpv</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>libmpv</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0601;WINVER= 0x0601;_CRT_SECURE_NO_WARNINGS;COBJMACROS;_SCL_SECURE_NO_WARNINGS;SPIRV_CROSS_C_API_GLSL=1;SPIRV_CROSS_C_API_HLSL=1;SPIRV_CROSS_C_API_MSL=1;SPIRV_CROSS_C_API_CPP=1;SPIRV_CROSS_C_API_REFLECT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./compat;../mpv/osdep/win32/include;./;../mpv/;../third/dist/ffmpeg/include;../third/SPIRV-Cross;../third/dist/shaderc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)$(Configuration)\$(PlatformTarget)\%(RelativeDir)</ObjectFileName>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4244;4018;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../third/dist/ffmpeg/lib;../third/dist/shaderc/lib/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avutil.lib;avformat.lib;avfilter.lib;avdevice.lib;swresample.lib;swscale.lib;avrt.lib;libzlib.lib;winmm.lib;dwmapi.lib;opengl32.lib;version.lib;shaderc_combined.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0601;WINVER= 0x0601;_CRT_SECURE_NO_WARNINGS;COBJMACROS;_SCL_SECURE_NO_WARNINGS;SPIRV_CROSS_C_API_GLSL=1;SPIRV_CROSS_C_API_HLSL=1;SPIRV_CROSS_C_API_MSL=1;SPIRV_CROSS_C_API_CPP=1;SPIRV_CROSS_C_API_REFLECT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./compat;../mpv/osdep/win32/include;./;../mpv/;../third/dist/ffmpeg/include;../third/SPIRV-Cross;../third/dist/shaderc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)$(Configuration)\$(PlatformTarget)\%(RelativeDir)</ObjectFileName>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4244;4018;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../third/dist/ffmpeg/lib;../third/dist/shaderc/lib/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avutil.lib;avformat.lib;avfilter.lib;avdevice.lib;swresample.lib;swscale.lib;avrt.lib;libzlib.lib;winmm.lib;dwmapi.lib;opengl32.lib;version.lib;shaderc_combined.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>./res/mpv.def</ModuleDefinitionFile>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0601;WINVER= 0x0601;_CRT_SECURE_NO_WARNINGS;COBJMACROS;_SCL_SECURE_NO_WARNINGS;SPIRV_CROSS_C_API_GLSL=1;SPIRV_CROSS_C_API_HLSL=1;SPIRV_CROSS_C_API_MSL=1;SPIRV_CROSS_C_API_CPP=1;SPIRV_CROSS_C_API_REFLECT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)$(Configuration)\$(PlatformTarget)\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>./compat;../mpv/osdep/win32/include;./;../mpv/;../third/dist/ffmpeg/include;../third/SPIRV-Cross;../third/dist/shaderc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4018;4305</DisableSpecificWarnings>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../third/dist/ffmpeg/lib;../third/dist/shaderc/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avutil.lib;avformat.lib;avfilter.lib;avdevice.lib;swresample.lib;swscale.lib;avrt.lib;libzlib.lib;winmm.lib;dwmapi.lib;opengl32.lib;version.lib;shaderc_combined.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0601;WINVER= 0x0601;_CRT_SECURE_NO_WARNINGS;COBJMACROS;_SCL_SECURE_NO_WARNINGS;SPIRV_CROSS_C_API_GLSL=1;SPIRV_CROSS_C_API_HLSL=1;SPIRV_CROSS_C_API_MSL=1;SPIRV_CROSS_C_API_CPP=1;SPIRV_CROSS_C_API_REFLECT=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./compat;../mpv/osdep/win32/include;./;../mpv/;../third/dist/ffmpeg/include;../third/SPIRV-Cross;../third/dist/shaderc/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)$(Configuration)\$(PlatformTarget)\%(RelativeDir)</ObjectFileName>
+      <DisableSpecificWarnings>4244;4018;4305</DisableSpecificWarnings>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../third/dist/ffmpeg/lib;../third/dist/shaderc/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avutil.lib;avformat.lib;avfilter.lib;avdevice.lib;swresample.lib;swscale.lib;avrt.lib;libzlib.lib;winmm.lib;dwmapi.lib;opengl32.lib;version.lib;shaderc_combined.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>./res/mpv.def</ModuleDefinitionFile>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\mpv\audio\aframe.h" />
+    <ClInclude Include="..\mpv\audio\audio_buffer.h" />
+    <ClInclude Include="..\mpv\audio\chmap.h" />
+    <ClInclude Include="..\mpv\audio\chmap_sel.h" />
+    <ClInclude Include="..\mpv\audio\filter\equalizer.h" />
+    <ClInclude Include="..\mpv\audio\fmt-conversion.h" />
+    <ClInclude Include="..\mpv\audio\format.h" />
+    <ClInclude Include="..\mpv\audio\out\ao.h" />
+    <ClInclude Include="..\mpv\audio\out\ao_wasapi.h" />
+    <ClInclude Include="..\mpv\audio\out\internal.h" />
+    <ClInclude Include="..\mpv\common\av_common.h" />
+    <ClInclude Include="..\mpv\common\av_log.h" />
+    <ClInclude Include="..\mpv\common\codecs.h" />
+    <ClInclude Include="..\mpv\common\common.h" />
+    <ClInclude Include="..\mpv\common\encode.h" />
+    <ClInclude Include="..\mpv\common\encode_lavc.h" />
+    <ClInclude Include="..\mpv\common\global.h" />
+    <ClInclude Include="..\mpv\common\msg.h" />
+    <ClInclude Include="..\mpv\common\msg_control.h" />
+    <ClInclude Include="..\mpv\common\playlist.h" />
+    <ClInclude Include="..\mpv\common\recorder.h" />
+    <ClInclude Include="..\mpv\common\tags.h" />
+    <ClInclude Include="..\mpv\demux\codec_tags.h" />
+    <ClInclude Include="..\mpv\demux\cue.h" />
+    <ClInclude Include="..\mpv\demux\demux.h" />
+    <ClInclude Include="..\mpv\demux\ebml.h" />
+    <ClInclude Include="..\mpv\demux\matroska.h" />
+    <ClInclude Include="..\mpv\demux\packet.h" />
+    <ClInclude Include="..\mpv\demux\stheader.h" />
+    <ClInclude Include="..\mpv\demux\timeline.h" />
+    <ClInclude Include="..\mpv\filters\filter.h" />
+    <ClInclude Include="..\mpv\filters\filter_internal.h" />
+    <ClInclude Include="..\mpv\filters\frame.h" />
+    <ClInclude Include="..\mpv\filters\f_autoconvert.h" />
+    <ClInclude Include="..\mpv\filters\f_auto_filters.h" />
+    <ClInclude Include="..\mpv\filters\f_decoder_wrapper.h" />
+    <ClInclude Include="..\mpv\filters\f_demux_in.h" />
+    <ClInclude Include="..\mpv\filters\f_hwtransfer.h" />
+    <ClInclude Include="..\mpv\filters\f_lavfi.h" />
+    <ClInclude Include="..\mpv\filters\f_output_chain.h" />
+    <ClInclude Include="..\mpv\filters\f_swresample.h" />
+    <ClInclude Include="..\mpv\filters\f_swscale.h" />
+    <ClInclude Include="..\mpv\filters\f_utils.h" />
+    <ClInclude Include="..\mpv\filters\user_filters.h" />
+    <ClInclude Include="..\mpv\input\cmd.h" />
+    <ClInclude Include="..\mpv\input\event.h" />
+    <ClInclude Include="..\mpv\input\input.h" />
+    <ClInclude Include="..\mpv\input\keycodes.h" />
+    <ClInclude Include="..\mpv\libmpv\client.h" />
+    <ClInclude Include="..\mpv\libmpv\opengl_cb.h" />
+    <ClInclude Include="..\mpv\libmpv\render.h" />
+    <ClInclude Include="..\mpv\libmpv\render_gl.h" />
+    <ClInclude Include="..\mpv\libmpv\stream_cb.h" />
+    <ClInclude Include="..\mpv\misc\bstr.h" />
+    <ClInclude Include="..\mpv\misc\charset_conv.h" />
+    <ClInclude Include="..\mpv\misc\ctype.h" />
+    <ClInclude Include="..\mpv\misc\dispatch.h" />
+    <ClInclude Include="..\mpv\misc\json.h" />
+    <ClInclude Include="..\mpv\misc\linked_list.h" />
+    <ClInclude Include="..\mpv\misc\node.h" />
+    <ClInclude Include="..\mpv\misc\rendezvous.h" />
+    <ClInclude Include="..\mpv\misc\ring.h" />
+    <ClInclude Include="..\mpv\misc\thread_pool.h" />
+    <ClInclude Include="..\mpv\misc\thread_tools.h" />
+    <ClInclude Include="..\mpv\mpv_talloc.h" />
+    <ClInclude Include="..\mpv\options\m_config.h" />
+    <ClInclude Include="..\mpv\options\m_option.h" />
+    <ClInclude Include="..\mpv\options\m_property.h" />
+    <ClInclude Include="..\mpv\options\options.h" />
+    <ClInclude Include="..\mpv\options\parse_commandline.h" />
+    <ClInclude Include="..\mpv\options\parse_configfile.h" />
+    <ClInclude Include="..\mpv\options\path.h" />
+    <ClInclude Include="..\mpv\osdep\atomic.h" />
+    <ClInclude Include="..\mpv\osdep\compiler.h" />
+    <ClInclude Include="..\mpv\osdep\getpid.h" />
+    <ClInclude Include="..\mpv\osdep\io.h" />
+    <ClInclude Include="..\mpv\osdep\main-fn.h" />
+    <ClInclude Include="..\mpv\osdep\path.h" />
+    <ClInclude Include="..\mpv\osdep\semaphore.h" />
+    <ClInclude Include="..\mpv\osdep\strnlen.h" />
+    <ClInclude Include="..\mpv\osdep\subprocess.h" />
+    <ClInclude Include="..\mpv\osdep\terminal.h" />
+    <ClInclude Include="..\mpv\osdep\threads.h" />
+    <ClInclude Include="..\mpv\osdep\timer.h" />
+    <ClInclude Include="..\mpv\osdep\w32_keyboard.h" />
+    <ClInclude Include="..\mpv\osdep\win32\include\pthread.h" />
+    <ClInclude Include="..\mpv\osdep\win32\include\semaphore.h" />
+    <ClInclude Include="..\mpv\osdep\windows_utils.h" />
+    <ClInclude Include="..\mpv\player\client.h" />
+    <ClInclude Include="..\mpv\player\command.h" />
+    <ClInclude Include="..\mpv\player\core.h" />
+    <ClInclude Include="..\mpv\player\external_files.h" />
+    <ClInclude Include="..\mpv\player\screenshot.h" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv.h" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cfg.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_common.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cpp.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cross.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cross_c.h" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cross_containers.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cross_error_handling.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cross_parsed_ir.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_cross_util.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_glsl.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_hlsl.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_msl.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_parser.hpp" />
+    <ClInclude Include="..\third\SPIRV-Cross\spirv_reflect.hpp" />
+    <ClInclude Include="..\mpv\stream\cookies.h" />
+    <ClInclude Include="..\mpv\stream\frequencies.h" />
+    <ClInclude Include="..\mpv\stream\rar.h" />
+    <ClInclude Include="..\mpv\stream\stream.h" />
+    <ClInclude Include="..\mpv\sub\dec_sub.h" />
+    <ClInclude Include="..\mpv\sub\draw_bmp.h" />
+    <ClInclude Include="..\mpv\sub\img_convert.h" />
+    <ClInclude Include="..\mpv\sub\osd.h" />
+    <ClInclude Include="..\mpv\sub\osd_state.h" />
+    <ClInclude Include="..\mpv\sub\sd.h" />
+    <ClInclude Include="..\mpv\ta\ta.h" />
+    <ClInclude Include="..\mpv\ta\ta_talloc.h" />
+    <ClInclude Include="..\mpv\video\csputils.h" />
+    <ClInclude Include="..\mpv\video\d3d.h" />
+    <ClInclude Include="..\mpv\video\filter\refqueue.h" />
+    <ClInclude Include="..\mpv\video\fmt-conversion.h" />
+    <ClInclude Include="..\mpv\video\hwdec.h" />
+    <ClInclude Include="..\mpv\video\image_loader.h" />
+    <ClInclude Include="..\mpv\video\image_writer.h" />
+    <ClInclude Include="..\mpv\video\img_format.h" />
+    <ClInclude Include="..\mpv\video\mp_image.h" />
+    <ClInclude Include="..\mpv\video\mp_image_pool.h" />
+    <ClInclude Include="..\mpv\video\out\aspect.h" />
+    <ClInclude Include="..\mpv\video\out\bitmap_packer.h" />
+    <ClInclude Include="..\mpv\video\out\d3d11\ra_d3d11.h" />
+    <ClInclude Include="..\mpv\video\out\d3d_shader_420p.h" />
+    <ClInclude Include="..\mpv\video\out\dither.h" />
+    <ClInclude Include="..\mpv\video\out\dr_helper.h" />
+    <ClInclude Include="..\mpv\video\out\filter_kernels.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\context.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\d3d11_helpers.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\error_diffusion.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\hwdec.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\lcms.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\libmpv_gpu.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\osd.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\ra.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\shader_cache.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\spirv.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\user_shaders.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\utils.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\video.h" />
+    <ClInclude Include="..\mpv\video\out\gpu\video_shaders.h" />
+    <ClInclude Include="..\mpv\video\out\libmpv.h" />
+    <ClInclude Include="..\mpv\video\out\opengl\common.h" />
+    <ClInclude Include="..\mpv\video\out\opengl\context.h" />
+    <ClInclude Include="..\mpv\video\out\opengl\formats.h" />
+    <ClInclude Include="..\mpv\video\out\opengl\gl_headers.h" />
+    <ClInclude Include="..\mpv\video\out\opengl\ra_gl.h" />
+    <ClInclude Include="..\mpv\video\out\opengl\utils.h" />
+    <ClInclude Include="..\mpv\video\out\vo.h" />
+    <ClInclude Include="..\mpv\video\out\w32_common.h" />
+    <ClInclude Include="..\mpv\video\out\win32\displayconfig.h" />
+    <ClInclude Include="..\mpv\video\out\win32\droptarget.h" />
+    <ClInclude Include="..\mpv\video\out\win_state.h" />
+    <ClInclude Include="..\mpv\video\sws_utils.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="ebml_types.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\mpv\audio\aframe.c" />
+    <ClCompile Include="..\mpv\audio\audio_buffer.c" />
+    <ClCompile Include="..\mpv\audio\chmap.c" />
+    <ClCompile Include="..\mpv\audio\chmap_sel.c" />
+    <ClCompile Include="..\mpv\audio\decode\ad_lavc.c" />
+    <ClCompile Include="..\mpv\audio\decode\ad_spdif.c" />
+    <ClCompile Include="..\mpv\audio\filter\af_format.c" />
+    <ClCompile Include="..\mpv\audio\filter\af_lavcac3enc.c" />
+    <ClCompile Include="..\mpv\audio\filter\af_lavrresample.c" />
+    <ClCompile Include="..\mpv\audio\filter\af_scaletempo.c" />
+    <ClCompile Include="..\mpv\audio\fmt-conversion.c" />
+    <ClCompile Include="..\mpv\audio\format.c" />
+    <ClCompile Include="..\mpv\audio\out\ao.c" />
+    <ClCompile Include="..\mpv\audio\out\ao_lavc.c" />
+    <ClCompile Include="..\mpv\audio\out\ao_null.c" />
+    <ClCompile Include="..\mpv\audio\out\ao_pcm.c" />
+    <ClCompile Include="..\mpv\audio\out\ao_wasapi.c" />
+    <ClCompile Include="..\mpv\audio\out\ao_wasapi_changenotify.c" />
+    <ClCompile Include="..\mpv\audio\out\ao_wasapi_utils.c" />
+    <ClCompile Include="..\mpv\audio\out\pull.c" />
+    <ClCompile Include="..\mpv\audio\out\push.c" />
+    <ClCompile Include="..\mpv\common\av_common.c" />
+    <ClCompile Include="..\mpv\common\av_log.c" />
+    <ClCompile Include="..\mpv\common\codecs.c" />
+    <ClCompile Include="..\mpv\common\common.c" />
+    <ClCompile Include="..\mpv\common\encode_lavc.c" />
+    <ClCompile Include="..\mpv\common\msg.c" />
+    <ClCompile Include="..\mpv\common\playlist.c" />
+    <ClCompile Include="..\mpv\common\recorder.c" />
+    <ClCompile Include="..\mpv\common\tags.c" />
+    <ClCompile Include="..\mpv\common\version.c" />
+    <ClCompile Include="..\mpv\demux\codec_tags.c" />
+    <ClCompile Include="..\mpv\demux\cue.c" />
+    <ClCompile Include="..\mpv\demux\demux.c" />
+    <ClCompile Include="..\mpv\demux\demux_cue.c" />
+    <ClCompile Include="..\mpv\demux\demux_disc.c" />
+    <ClCompile Include="..\mpv\demux\demux_edl.c" />
+    <ClCompile Include="..\mpv\demux\demux_lavf.c" />
+    <ClCompile Include="..\mpv\demux\demux_mf.c" />
+    <ClCompile Include="..\mpv\demux\demux_mkv.c" />
+    <ClCompile Include="..\mpv\demux\demux_mkv_timeline.c" />
+    <ClCompile Include="..\mpv\demux\demux_null.c" />
+    <ClCompile Include="..\mpv\demux\demux_playlist.c" />
+    <ClCompile Include="..\mpv\demux\demux_rar.c" />
+    <ClCompile Include="..\mpv\demux\demux_raw.c" />
+    <ClCompile Include="..\mpv\demux\demux_timeline.c" />
+    <ClCompile Include="..\mpv\demux\ebml.c" />
+    <ClCompile Include="..\mpv\demux\packet.c" />
+    <ClCompile Include="..\mpv\demux\timeline.c" />
+    <ClCompile Include="..\mpv\filters\filter.c" />
+    <ClCompile Include="..\mpv\filters\frame.c" />
+    <ClCompile Include="..\mpv\filters\f_autoconvert.c" />
+    <ClCompile Include="..\mpv\filters\f_auto_filters.c" />
+    <ClCompile Include="..\mpv\filters\f_decoder_wrapper.c" />
+    <ClCompile Include="..\mpv\filters\f_demux_in.c" />
+    <ClCompile Include="..\mpv\filters\f_hwtransfer.c" />
+    <ClCompile Include="..\mpv\filters\f_lavfi.c" />
+    <ClCompile Include="..\mpv\filters\f_output_chain.c" />
+    <ClCompile Include="..\mpv\filters\f_swresample.c" />
+    <ClCompile Include="..\mpv\filters\f_swscale.c" />
+    <ClCompile Include="..\mpv\filters\f_utils.c" />
+    <ClCompile Include="..\mpv\filters\user_filters.c" />
+    <ClCompile Include="..\mpv\input\cmd.c" />
+    <ClCompile Include="..\mpv\input\event.c" />
+    <ClCompile Include="..\mpv\input\input.c" />
+    <ClCompile Include="..\mpv\input\ipc-win.c" />
+    <ClCompile Include="..\mpv\input\ipc.c" />
+    <ClCompile Include="..\mpv\input\keycodes.c" />
+    <ClCompile Include="..\mpv\input\pipe-win32.c" />
+    <ClCompile Include="..\mpv\misc\bstr.c" />
+    <ClCompile Include="..\mpv\misc\charset_conv.c" />
+    <ClCompile Include="..\mpv\misc\dispatch.c" />
+    <ClCompile Include="..\mpv\misc\json.c" />
+    <ClCompile Include="..\mpv\misc\node.c" />
+    <ClCompile Include="..\mpv\misc\rendezvous.c" />
+    <ClCompile Include="..\mpv\misc\ring.c" />
+    <ClCompile Include="..\mpv\misc\thread_pool.c" />
+    <ClCompile Include="..\mpv\misc\thread_tools.c" />
+    <ClCompile Include="..\mpv\options\m_config.c" />
+    <ClCompile Include="..\mpv\options\m_option.c" />
+    <ClCompile Include="..\mpv\options\m_property.c" />
+    <ClCompile Include="..\mpv\options\options.c" />
+    <ClCompile Include="..\mpv\options\parse_commandline.c" />
+    <ClCompile Include="..\mpv\options\parse_configfile.c" />
+    <ClCompile Include="..\mpv\options\path.c" />
+    <ClCompile Include="..\mpv\osdep\glob-win.c" />
+    <ClCompile Include="..\mpv\osdep\io.c" />
+    <ClCompile Include="..\mpv\osdep\main-fn-win.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\mpv\osdep\path-win.c" />
+    <ClCompile Include="..\mpv\osdep\subprocess-win.c" />
+    <ClCompile Include="..\mpv\osdep\subprocess.c" />
+    <ClCompile Include="..\mpv\osdep\terminal-win.c" />
+    <ClCompile Include="..\mpv\osdep\threads.c" />
+    <ClCompile Include="..\mpv\osdep\timer-win2.c" />
+    <ClCompile Include="..\mpv\osdep\timer.c" />
+    <ClCompile Include="..\mpv\osdep\w32_keyboard.c" />
+    <ClCompile Include="..\mpv\osdep\win32\pthread.c" />
+    <ClCompile Include="..\mpv\osdep\windows_utils.c" />
+    <ClCompile Include="..\mpv\player\audio.c" />
+    <ClCompile Include="..\mpv\player\client.c" />
+    <ClCompile Include="..\mpv\player\command.c" />
+    <ClCompile Include="..\mpv\player\configfiles.c" />
+    <ClCompile Include="..\mpv\player\external_files.c" />
+    <ClCompile Include="..\mpv\player\loadfile.c" />
+    <ClCompile Include="..\mpv\player\main.c" />
+    <ClCompile Include="..\mpv\player\misc.c" />
+    <ClCompile Include="..\mpv\player\osd.c" />
+    <ClCompile Include="..\mpv\player\playloop.c" />
+    <ClCompile Include="..\mpv\player\screenshot.c" />
+    <ClCompile Include="..\mpv\player\scripting.c" />
+    <ClCompile Include="..\mpv\player\sub.c" />
+    <ClCompile Include="..\mpv\player\video.c" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_cfg.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_cpp.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_cross.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_cross_c.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_cross_parsed_ir.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_cross_util.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_glsl.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_hlsl.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_msl.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_parser.cpp" />
+    <ClCompile Include="..\third\SPIRV-Cross\spirv_reflect.cpp" />
+    <ClCompile Include="..\mpv\stream\cookies.c" />
+    <ClCompile Include="..\mpv\stream\frequencies.c" />
+    <ClCompile Include="..\mpv\stream\rar.c" />
+    <ClCompile Include="..\mpv\stream\stream.c" />
+    <ClCompile Include="..\mpv\stream\stream_avdevice.c" />
+    <ClCompile Include="..\mpv\stream\stream_cb.c" />
+    <ClCompile Include="..\mpv\stream\stream_edl.c" />
+    <ClCompile Include="..\mpv\stream\stream_file.c" />
+    <ClCompile Include="..\mpv\stream\stream_lavf.c" />
+    <ClCompile Include="..\mpv\stream\stream_memory.c" />
+    <ClCompile Include="..\mpv\stream\stream_mf.c" />
+    <ClCompile Include="..\mpv\stream\stream_null.c" />
+    <ClCompile Include="..\mpv\stream\stream_rar.c" />
+    <ClCompile Include="..\mpv\sub\dec_sub.c" />
+    <ClCompile Include="..\mpv\sub\draw_bmp.c" />
+    <ClCompile Include="..\mpv\sub\filter_sdh.c" />
+    <ClCompile Include="..\mpv\sub\img_convert.c" />
+    <ClCompile Include="..\mpv\sub\lavc_conv.c" />
+    <ClCompile Include="..\mpv\sub\osd.c" />
+    <ClCompile Include="..\mpv\sub\osd_dummy.c" />
+    <ClCompile Include="..\mpv\sub\sd_lavc.c" />
+    <ClCompile Include="..\mpv\ta\ta.c" />
+    <ClCompile Include="..\mpv\ta\ta_talloc.c" />
+    <ClCompile Include="..\mpv\ta\ta_utils.c" />
+    <ClCompile Include="..\mpv\video\csputils.c" />
+    <ClCompile Include="..\mpv\video\d3d.c" />
+    <ClCompile Include="..\mpv\video\decode\vd_lavc.c" />
+    <ClCompile Include="..\mpv\video\filter\refqueue.c" />
+    <ClCompile Include="..\mpv\video\filter\vf_d3d11vpp.c" />
+    <ClCompile Include="..\mpv\video\filter\vf_format.c" />
+    <ClCompile Include="..\mpv\video\filter\vf_sub.c" />
+    <ClCompile Include="..\mpv\video\fmt-conversion.c" />
+    <ClCompile Include="..\mpv\video\hwdec.c" />
+    <ClCompile Include="..\mpv\video\image_loader.c" />
+    <ClCompile Include="..\mpv\video\image_writer.c" />
+    <ClCompile Include="..\mpv\video\img_format.c" />
+    <ClCompile Include="..\mpv\video\mp_image.c" />
+    <ClCompile Include="..\mpv\video\mp_image_pool.c" />
+    <ClCompile Include="..\mpv\video\out\aspect.c" />
+    <ClCompile Include="..\mpv\video\out\bitmap_packer.c" />
+    <ClCompile Include="..\mpv\video\out\d3d11\context.c" />
+    <ClCompile Include="..\mpv\video\out\d3d11\hwdec_d3d11va.c" />
+    <ClCompile Include="..\mpv\video\out\d3d11\hwdec_dxva2dxgi.c" />
+    <ClCompile Include="..\mpv\video\out\d3d11\ra_d3d11.c" />
+    <ClCompile Include="..\mpv\video\out\dither.c" />
+    <ClCompile Include="..\mpv\video\out\dr_helper.c" />
+    <ClCompile Include="..\mpv\video\out\filter_kernels.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\context.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\d3d11_helpers.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\error_diffusion.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\hwdec.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\lcms.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\libmpv_gpu.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\osd.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\ra.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\shader_cache.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\spirv.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\spirv_shaderc.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\user_shaders.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\utils.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\video.c" />
+    <ClCompile Include="..\mpv\video\out\gpu\video_shaders.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\common.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\context.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\context_dxinterop.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\context_win.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\formats.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\hwdec_dxva2gldx.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\libmpv_gl.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\ra_gl.c" />
+    <ClCompile Include="..\mpv\video\out\opengl\utils.c" />
+    <ClCompile Include="..\mpv\video\out\vo.c" />
+    <ClCompile Include="..\mpv\video\out\vo_direct3d.c" />
+    <ClCompile Include="..\mpv\video\out\vo_gpu.c" />
+    <ClCompile Include="..\mpv\video\out\vo_image.c" />
+    <ClCompile Include="..\mpv\video\out\vo_lavc.c" />
+    <ClCompile Include="..\mpv\video\out\vo_libmpv.c" />
+    <ClCompile Include="..\mpv\video\out\vo_null.c" />
+    <ClCompile Include="..\mpv\video\out\vo_tct.c" />
+    <ClCompile Include="..\mpv\video\out\w32_common.c" />
+    <ClCompile Include="..\mpv\video\out\win32\displayconfig.c" />
+    <ClCompile Include="..\mpv\video\out\win32\droptarget.c" />
+    <ClCompile Include="..\mpv\video\out\win_state.c" />
+    <ClCompile Include="..\mpv\video\sws_utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\mpv\ta\README" />
+    <None Include="res\mpv.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\mpv\sub\osd_font.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\mpv.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\mpv.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
