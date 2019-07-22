@@ -1,0 +1,11 @@
+prefix=@@PREFIX@@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: davs2
+Description: davs2 static library
+Version: 1.6.175
+Libs: -L${libdir} -llibdavs2 -lstdc++
+Libs.private:
+Cflags: -I${includedir}
