@@ -1,7 +1,7 @@
 # mpv-vsbuild
 mpv build for visual studio, and libmpv be embedded for use in other applications;
 
-libmpv be build with no osd, no lua, some hw decoded video render(temporary, without libegl), only some soft and hw video decoder(mainly include mp4\henc\mkv\vp8\vp9\vc1\avs\avs2 etc.) for ffmpeg.
+libmpv be build with no osd, no lua, some hw decoded video render(temporary, without libegl), only some soft and hw video decoder(mainly include h264\hevc\mkv\vp8\vp9\vc1\avs\avs2 etc.) for ffmpeg.
 
 ## License
 
