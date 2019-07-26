@@ -10,3 +10,6 @@
 [submodule "third/FFmpeg"]
 	path = third/FFmpeg
 	url = https://github.com/FFmpeg/FFmpeg.git
+[submodule "third/shaderc"]
+	path = third/shaderc
+	url = https://github.com/google/shaderc.git
